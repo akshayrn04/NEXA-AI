@@ -8,7 +8,8 @@ import time
 from prompts import SYSTEM_PROMPT, MOCK_INTERVIEW_PROMPT
 
 load_dotenv()
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+api_key = os.getenv("GEMINI_API_KEY") or st.secrets.get("GEMINI_API_KEY")
+client = genai.Client(api_key=api_key)
 
 st.set_page_config(page_title="NEXA AI", page_icon="assets/logo.png", layout="centered")
 
