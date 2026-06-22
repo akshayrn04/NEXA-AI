@@ -1,0 +1,20 @@
+# Virtual environment
+venv/
+.venv/
+
+# Environment variables (your API key!)
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VS Code settings (optional, personal editor config)
+.vscode/
+
+# OS-specific junk files
+.DS_Store
+Thumbs.db
+
+# Streamlit (if you ever add secrets locally for testing)
+.streamlit/secrets.toml
